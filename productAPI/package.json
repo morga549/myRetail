@@ -1,0 +1,25 @@
+{
+  "name": "productapi",
+  "version": "1.0.0",
+  "description": "RESTful service for fetching product info from Mongo and external API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morga549/myRetail.git"
+  },
+  "author": "morga549",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morga549/myRetail/issues"
+  },
+  "homepage": "https://github.com/morga549/myRetail#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "jest": "^25.3.0",
+    "morgan": "^1.10.0"
+  }
+}
