@@ -36,7 +36,7 @@ const pageNotFound = (req, res) => {
     );
 }
 
-const errorHandler = (errror, req, res, next) => {
+const errorHandler = (error, req, res, next) => {
     // catch-all for errors rather than sending 500s from all over the code
     if(error === CONSTANTS.HTTP_RESPONSES.INVALID_PARAMS.MESSAGE) {
         res.status(
@@ -44,7 +44,14 @@ const errorHandler = (errror, req, res, next) => {
         ).send(
             CONSTANTS.HTTP_RESPONSES.INVALID_PARAMS.MESSAGE
         );
+    } else if (error === CONSTANTS.HTTP_RESPONSES.PAGE_NOT_FOUND.MESSAGE) {
+        res.status(
+            CONSTANTS.HTTP_RESPONSES.PAGE_NOT_FOUND.CODE
+        ).send(
+            CONSTANTS.HTTP_RESPONSES.PAGE_NOT_FOUND.MESSAGE
+        );
     } else {
+        console.log(error)
         res.status(
             CONSTANTS.HTTP_RESPONSES.INTERNAL_SERVER_ERROR.CODE
         ).send(

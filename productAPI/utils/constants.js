@@ -29,6 +29,11 @@ const CONSTANTS = {
         },
         PUT_SUCCESS: {
             CODE: 201
+        },
+        NO_CONTENT:{
+            CODE: 204,
+            PRICE_MESSAGE: 'Price data not available',
+            NAME_MESSAGE: 'Product data not available'
         }
     },
     REDSKY: {

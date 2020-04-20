@@ -23,7 +23,8 @@ app.use(express.json());
 // pass req, res on to product router
 app.use('/products', productsRouter);
 
-//
+app.use(middlewares.pageNotFound);
+app.use(middlewares.errorHandler);
 
 // Check for NODE_ENV
 if (process.env.NODE_ENV) {
