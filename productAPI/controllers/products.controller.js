@@ -19,11 +19,11 @@ const getProduct = async (req, res, next) => {
                 }
             } else {
                 res.status(CONSTANTS.HTTP_RESPONSES.INVALID_PARAMS.CODE)
-                    .send(CONSTANTS.HTTP_RESPONSES.INVALID_PARAMS.CODE)
+                    .send(CONSTANTS.HTTP_RESPONSES.INVALID_PARAMS.MESSAGE)
             }
         } else {
             res.status(CONSTANTS.HTTP_RESPONSES.MISSING_PARAM.CODE)
-                .send(CONSTANTS.HTTP_RESPONSES.MISSING_PARAM.CODE);
+                .send(CONSTANTS.HTTP_RESPONSES.MISSING_PARAM.MESSAGE);
         }
     } catch(error) {
         next(error)

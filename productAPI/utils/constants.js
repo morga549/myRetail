@@ -2,7 +2,7 @@ const CONSTANTS = {
     HTTP_RESPONSES: {
         INVALID_PARAMS: {
             CODE: 400,
-            MESSAGE: 'Invalid Parmeters'
+            MESSAGE: 'Invalid Parameters'
         },
         MISSING_PARAM: {
             CODE: 400,
@@ -30,11 +30,6 @@ const CONSTANTS = {
         PUT_SUCCESS: {
             CODE: 201
         },
-        NO_CONTENT:{
-            CODE: 204,
-            PRICE_MESSAGE: 'Price data not available',
-            NAME_MESSAGE: 'Product data not available'
-        }
     },
     REDSKY: {
         URL: 'http://redsky.target.com/v2/pdp/tcin/',
