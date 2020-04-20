@@ -4,7 +4,9 @@
   "description": "RESTful service for fetching product info from Mongo and external API",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "nodemon --inspect app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,13 @@
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "jest": "^25.3.0",
-    "morgan": "^1.10.0"
+    "mongodb": "^3.5.6",
+    "morgan": "^1.10.0",
+    "request-promise-native": "^1.0.8",
+    "validate-currency-code": "^0.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3"
   }
 }
