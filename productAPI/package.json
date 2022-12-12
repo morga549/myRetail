@@ -20,7 +20,7 @@
   "homepage": "https://github.com/morga549/myRetail#readme",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jest": "^25.3.0",
     "mongodb": "^3.5.6",
     "morgan": "^1.10.0",
